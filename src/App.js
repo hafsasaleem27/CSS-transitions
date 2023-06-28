@@ -26,16 +26,16 @@ class App extends Component {
     return (
       <div className="App">
         <h1>React Animations</h1>
-        {/* <Modal show={this.state.isModalOpen} closed={this.closeModal} /> */}
-        {/* <Backdrop show={this.state.isModalOpen} closed={this.closeModal} /> */}
-        {ReactDOM.createPortal(
+        <Modal show={this.state.isModalOpen} closed={this.closeModal} />
+        <Backdrop show={this.state.isModalOpen} closed={this.closeModal} />
+        {/* {ReactDOM.createPortal(
           <Modal show={this.state.isModalOpen} closed={this.closeModal} />,
           document.getElementById("modal-root")
-        )}
-        {ReactDOM.createPortal(
+        )} */}
+        {/* {ReactDOM.createPortal(
           <Backdrop show={this.state.isModalOpen} closed={this.closeModal} />,
           document.getElementById("backdrop-root")
-        )}
+        )} */}
         <button className="Button" onClick={this.showModal}>
           Open Modal
         </button>
